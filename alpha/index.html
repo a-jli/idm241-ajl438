@@ -13,9 +13,9 @@
         <h1>IDM 241: Alpha Description</h1>
         <a href="https://itch.io/" target="_blank"><h2>Itch.io</h2></a>
         <h2>Interaction: Rating Star Icons</h2>
-        <h4>After logging in, click on any game to navigate to its page, 
+        <h4>After logging in, click onto any game to navigate to its page, 
             then click the "Rate this game" button on the top right
-            to pull up the "Rate & Review" popup.</h4>
+            to pull up the "Rate & Review" window.</h4>
     </header>
 
 
@@ -39,9 +39,9 @@
                     <h3>Rules</h3>
                 </div>
                 <div class="text-wrapper">
-                    <h4>Star Icon</h4>
+                    <h4>Star Icons Default - No Stars Selected</h4>
                     <ul>
-                        <li>Hover ON</li>
+                        <li>Hover ON</li> 
                         <ul>
                             <li>Cursor changes from Default to Pointer</li>
                             <li>Star fill changes from WHITE to DARK GREY</li>
@@ -59,6 +59,28 @@
                             <li>Star outline changes from GREY to RED</li>
                         </ul>
                     </ul>
+
+                    <h4>Star Icons Default - Any Star Selected</h4>
+                    <ul>
+                        <li>Hover ON</li>
+                        <ul>
+                            <li>Cursor changes from Default to Pointer</li>
+                            <li>Star fill changes from WHITE to RED</li>
+                            <li>Star outline changes from GREY to RED</li>
+                        </ul>
+                        <li>Hover OFF</li>
+                        <ul>
+                            <li>Cursor changes from Pointer to Default</li>
+                            <li>Star fill changes from RED to WHITE</li>
+                            <li>Star outline changes from RED to GREY</li>
+                        </ul>
+                        <li>Click Toggle ON</li>
+                        <ul>
+                            <li>Star fill stays RED</li>
+                            <li>Star outline stays RED</li>
+                        </ul>
+                    </ul>
+
                     <h4>Star Icons - Left of Hovered Star:</h4>
                     <ul>
                         <li>Hover ON</li>
@@ -81,22 +103,26 @@
                     <ul>
                         <li>Hover ON</li>
                         <ul>
-                            <li>Star fill changes from DARK GREY to WHITE </li>
-                            <li>Star outline changes from DARK GREY to GREY</li>
+                            <li>Star fill changes to WHITE </li>
+                            <li>Star outline changes to GREY</li>
                         </ul>
-                        <li>Hover OFF</li>
+                        <li>Hover OFF - No Star to Right Selected</li>
                         <ul>
-                            <li>Star fill changes from DARK GREY to WHITE</li>
-                            <li>Star outline changes from DARK GREY to GREY</li>
+                            <li>Star fill changes to WHITE </li>
+                            <li>Star outline changes to GREY</li>
                         </ul>
+                        <li>Hover OFF - Any Star to Right Selected</li>
+                        <ul>
+                            <li>Star fill changes to RED</li>
+                            <li>Star outline changes to RED</li>
+                        </ul>                        
                         <li>Click Toggle ON</li>
                         <ul>
-                            <li>Star fill changes to WHITE</li>
-                            <li>Star outline changes to GREY</li>
+                            <li>Star fill stays WHITE, ignoring Hover OFF</li>
+                            <li>Star outline stays GREY, ignoring Hover OFF</li>
                         </ul>
                     </ul>
                 </div>
-                
             </div>
 
 
