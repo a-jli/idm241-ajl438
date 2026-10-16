@@ -1,4 +1,4 @@
-let starClicked = 'noneClicked';
+let starClicked = false;
 const ratingStars = document.querySelectorAll('.star');
 let starId = '';
 
@@ -16,15 +16,34 @@ const star3Filled = document.querySelector('#s3-f');
 const star4Filled = document.querySelector('#s4-f');
 const star5Filled = document.querySelector('#s5-f');
 
+
+function changeColor () {
+    if (starClicked == false) {
+        star1Filled.style.fill = '#646464';
+        star2Filled.style.fill = '#646464';
+        star3Filled.style.fill = '#646464';
+        star4Filled.style.fill = '#646464';
+        star5Filled.style.fill = '#646464';
+    } else if (starClicked == true) {
+        star1Filled.style.fill = '#ff2449';
+        star2Filled.style.fill = '#ff2449';
+        star3Filled.style.fill = '#ff2449';
+        star4Filled.style.fill = '#ff2449';
+        star5Filled.style.fill = '#ff2449';        
+    } else {
+        console.log('changecolor broke');
+    };
+}
+
 //click
 ratingStars.forEach(function (ratingStar) {
     ratingStar.addEventListener('click', function (event) {
     starId = ratingStar.id;
-    starClicked = 'oneClicked';
-    console.log('StarId is ' + starId);
+    starClicked = true;
     //fill first star always
     star1Filled.style.display = 'block';
     star1.style.display = 'none';
+    changeColor();
     });
 });
 
@@ -32,8 +51,8 @@ ratingStars.forEach(function (ratingStar) {
 ratingStars.forEach(function (ratingStar) {
     ratingStar.addEventListener('mouseover', function (event) {
     const hoveredStarId = ratingStar.id;
-    console.log(hoveredStarId);
     leftRightHover(hoveredStarId);
+    changeColor();
     });
 });
 
@@ -41,6 +60,7 @@ ratingStars.forEach(function (ratingStar) {
     ratingStar.addEventListener('mouseout', function (event) {
     console.log('unhovered');
     leftRightUnHover(starId);
+    changeColor();
     });
 });
 
@@ -110,6 +130,7 @@ function leftRightHover(hoveredStarId) {
 }
 
 function leftRightUnHover(StarId) {
+
     if (starId === 's2' || starId === 's2-f') {
         star1Filled.style.display = 'block';
         star1.style.display = 'none';
