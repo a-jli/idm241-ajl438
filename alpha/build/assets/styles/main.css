@@ -187,14 +187,12 @@ video {
 .star {
     fill: var(--star-outline-fill-light)
 }
+
 .star:hover {
     fill: var(--star-outline-fill-dark);
     cursor: pointer;
 }
 
-.unfilled {
-    display:block;
-}
 
 .filled {
     display: none;
