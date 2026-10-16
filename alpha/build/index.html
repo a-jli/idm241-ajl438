@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDM 241-001 Alpha Build</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/itch-icon.png">
+    <link rel="stylesheet" href="assets/styles/normalize.css">
+    <link rel="stylesheet" href="assets/styles/main.css">
+</head>
+<body>
+    <header>
+        <img src="assets/images/itch-icon.png" loading="lazy" alt="itch.io icon">
+        <h1>IDM 241: Alpha Build</h1>
+        <a href="https://itch.io/" target="_blank"><h2>Itch.io</h2></a>
+        <h2>Interaction: Rating Star Icons</h2>
+        <img class="item-example" src="assets/images/itch-stars-image.png" loading="lazy" alt="itch.io rating stars">
+        <div class="stars-alpha">
+            <svg class="star unfilled" id="s1"
+                viewBox="0 0 16 16" width="1.7rem" height="1.7rem" fill="currentColor" {...props}>
+                <path d="M16 6.204l-5.528-0.803-2.472-5.009-2.472 5.009-5.528 0.803 4 3.899-0.944 5.505 4.944-2.599 4.944 2.599-0.944-5.505 4-3.899zM8 11.773l-3.492 1.836 0.667-3.888-2.825-2.753 3.904-0.567 1.746-3.537 1.746 3.537 3.904 0.567-2.825 2.753 0.667 3.888-3.492-1.836z"></path>
+            </svg>
+            <svg class="star filled" id="s1-f"
+                viewBox="0 0 16 16" width="1.7rem" height="1.7rem" fill="currentColor" {...props}>
+                <path d="M16 6.204l-5.528-0.803-2.472-5.009-2.472 5.009-5.528 0.803 4 3.899-0.944 5.505 4.944-2.599 4.944 2.599-0.944-5.505 4-3.899z"></path>
+            </svg>
+            <svg class="star unfilled" id="s2"
+                viewBox="0 0 16 16" width="1.7rem" height="1.7rem" fill="currentColor" {...props}>
+                <path d="M16 6.204l-5.528-0.803-2.472-5.009-2.472 5.009-5.528 0.803 4 3.899-0.944 5.505 4.944-2.599 4.944 2.599-0.944-5.505 4-3.899zM8 11.773l-3.492 1.836 0.667-3.888-2.825-2.753 3.904-0.567 1.746-3.537 1.746 3.537 3.904 0.567-2.825 2.753 0.667 3.888-3.492-1.836z"></path>
+            </svg>
+            <svg class="star filled" id="s2-f"
+                viewBox="0 0 16 16" width="1.7rem" height="1.7rem" fill="currentColor" {...props}>
+                <path d="M16 6.204l-5.528-0.803-2.472-5.009-2.472 5.009-5.528 0.803 4 3.899-0.944 5.505 4.944-2.599 4.944 2.599-0.944-5.505 4-3.899z"></path>
+            </svg>
+            <svg class="star unfilled" id="s3"
+                viewBox="0 0 16 16" width="1.7rem" height="1.7rem" fill="currentColor" {...props}>
+                <path d="M16 6.204l-5.528-0.803-2.472-5.009-2.472 5.009-5.528 0.803 4 3.899-0.944 5.505 4.944-2.599 4.944 2.599-0.944-5.505 4-3.899zM8 11.773l-3.492 1.836 0.667-3.888-2.825-2.753 3.904-0.567 1.746-3.537 1.746 3.537 3.904 0.567-2.825 2.753 0.667 3.888-3.492-1.836z"></path>
+            </svg>
+            <svg class="star filled" id="s3-f"
+                viewBox="0 0 16 16" width="1.7rem" height="1.7rem" fill="currentColor" {...props}>
+                <path d="M16 6.204l-5.528-0.803-2.472-5.009-2.472 5.009-5.528 0.803 4 3.899-0.944 5.505 4.944-2.599 4.944 2.599-0.944-5.505 4-3.899z"></path>
+            </svg>
+            <svg class="star unfilled" id="s4"
+                viewBox="0 0 16 16" width="1.7rem" height="1.7rem" fill="currentColor" {...props}>
+                <path d="M16 6.204l-5.528-0.803-2.472-5.009-2.472 5.009-5.528 0.803 4 3.899-0.944 5.505 4.944-2.599 4.944 2.599-0.944-5.505 4-3.899zM8 11.773l-3.492 1.836 0.667-3.888-2.825-2.753 3.904-0.567 1.746-3.537 1.746 3.537 3.904 0.567-2.825 2.753 0.667 3.888-3.492-1.836z"></path>
+            </svg>
+            <svg class="star filled" id="s4-f"
+                viewBox="0 0 16 16" width="1.7rem" height="1.7rem" fill="currentColor" {...props}>
+                <path d="M16 6.204l-5.528-0.803-2.472-5.009-2.472 5.009-5.528 0.803 4 3.899-0.944 5.505 4.944-2.599 4.944 2.599-0.944-5.505 4-3.899z"></path>
+            </svg>
+            <svg class="star unfilled" id="s5"
+                viewBox="0 0 16 16" width="1.7rem" height="1.7rem" fill="currentColor" {...props}>
+                <path d="M16 6.204l-5.528-0.803-2.472-5.009-2.472 5.009-5.528 0.803 4 3.899-0.944 5.505 4.944-2.599 4.944 2.599-0.944-5.505 4-3.899zM8 11.773l-3.492 1.836 0.667-3.888-2.825-2.753 3.904-0.567 1.746-3.537 1.746 3.537 3.904 0.567-2.825 2.753 0.667 3.888-3.492-1.836z"></path>
+            </svg>
+            <svg class="star filled" id="s5-f"
+                viewBox="0 0 16 16" width="1.7rem" height="1.7rem" fill="currentColor" {...props}>
+                <path d="M16 6.204l-5.528-0.803-2.472-5.009-2.472 5.009-5.528 0.803 4 3.899-0.944 5.505 4.944-2.599 4.944 2.599-0.944-5.505 4-3.899z"></path>
+            </svg>
+        </div>
+        <hr>
+    </header>
+
+
+    <div class="container-wrapper">
+        <div class="trfl-container">
+                <div class="pink-wrapper">
+                    <h3>Triggers</h3>
+                </div>
+                <div class="text-wrapper">
+                    <h4>Star Icon</h4>
+                    <ul>
+                        <li>Hover ON</li>
+                        <li>Hover OFF</li>
+                        <li>Click ON</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="trfl-container">
+                <div class="pink-wrapper">
+                    <h3>Rules</h3>
+                </div>
+                <div class="text-wrapper">
+                    <h4>Star Icons Default - No Stars Selected</h4>
+                    <ul>
+                        <li>Hover ON</li> 
+                        <ul>
+                            <li>Cursor changes from Default to Pointer</li>
+                            <li>Star fill changes from WHITE to DARK GREY</li>
+                            <li>Star outline changes from GREY to DARK GREY</li>
+                        </ul>
+                        <li>Hover OFF</li>
+                        <ul>
+                            <li>Cursor changes from Pointer to Default</li>
+                            <li>Star fill changes from DARK GREY to WHITE</li>
+                            <li>Star outline changes from DARK GREY to GREY</li>
+                        </ul>
+                        <li>Click Toggle ON</li>
+                        <ul>
+                            <li>Star fill changes from DARK GREY to RED</li>
+                            <li>Star outline changes from GREY to RED</li>
+                        </ul>
+                    </ul>
+
+                    <h4>Star Icons Default - Any Star Selected</h4>
+                    <ul>
+                        <li>Hover ON</li>
+                        <ul>
+                            <li>Cursor changes from Default to Pointer</li>
+                            <li>Star fill changes from WHITE to RED</li>
+                            <li>Star outline changes from GREY to RED</li>
+                        </ul>
+                        <li>Hover OFF</li>
+                        <ul>
+                            <li>Cursor changes from Pointer to Default</li>
+                            <li>Star fill changes from RED to WHITE</li>
+                            <li>Star outline changes from RED to GREY</li>
+                        </ul>
+                        <li>Click Toggle ON</li>
+                        <ul>
+                            <li>Star fill stays RED</li>
+                            <li>Star outline stays RED</li>
+                        </ul>
+                    </ul>
+
+                    <h4>Star Icons - Left of Hovered Star:</h4>
+                    <ul>
+                        <li>Hover ON</li>
+                        <ul>
+                            <li>Star fill changes from WHITE to DARK GREY</li>
+                            <li>Star outline changes from GREY to DARK GREY</li>
+                        </ul>
+                        <li>Hover OFF</li>
+                        <ul>
+                            <li>Star fill changes from DARK GREY to WHITE</li>
+                            <li>Star outline changes from DARK GREY to GREY</li>
+                        </ul>
+                        <li>Click Toggle ON</li>
+                        <ul>
+                            <li>Star fill changes to/stays RED, ignoring Hover OFF</li>
+                            <li>Star outline changes to/stays RED, ignoring Hover OFF</li>
+                        </ul>
+                    </ul>
+                    <h4>Star Icons - Right of Hovered Star:</h4>
+                    <ul>
+                        <li>Hover ON</li>
+                        <ul>
+                            <li>Star fill changes to WHITE </li>
+                            <li>Star outline changes to GREY</li>
+                        </ul>
+                        <li>Hover OFF - No Star to Right Selected</li>
+                        <ul>
+                            <li>N/A</li>
+                        </ul>
+                        <li>Hover OFF - Any Star to Right Selected</li>
+                        <ul>
+                            <li>Star fill changes to RED</li>
+                            <li>Star outline changes to RED</li>
+                        </ul>                        
+                        <li>Click Toggle ON</li>
+                        <ul>
+                            <li>Star fill stays WHITE, ignoring Hover OFF</li>
+                            <li>Star outline stays GREY, ignoring Hover OFF</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="trfl-container">
+                <div class="pink-wrapper">
+                    <h3>Feedback</h3>
+                </div>
+                <div class="text-wrapper">
+                    <h4>Star Icons Default - No Stars Selected</h4>
+                    <ul>
+                        <li>Hover ON</li> 
+                        <ul>
+                            <li>Cursor changes from Default to Pointer</li>
+                            <li>Star fill changes from WHITE to DARK GREY</li>
+                            <li>Star outline changes from GREY to DARK GREY</li>
+                        </ul>
+                        <li>Hover OFF</li>
+                        <ul>
+                            <li>Cursor changes from Pointer to Default</li>
+                            <li>Star fill changes from DARK GREY to WHITE</li>
+                            <li>Star outline changes from DARK GREY to GREY</li>
+                        </ul>
+                        <li>Click Toggle ON</li>
+                        <ul>
+                            <li>Star fill changes from DARK GREY to RED</li>
+                            <li>Star outline changes from GREY to RED</li>
+                        </ul>
+                    </ul>
+
+                    <h4>Star Icons Default - Any Star Selected</h4>
+                    <ul>
+                        <li>Hover ON</li>
+                        <ul>
+                            <li>Cursor changes from Default to Pointer</li>
+                            <li>Star fill changes from WHITE to RED</li>
+                            <li>Star outline changes from GREY to RED</li>
+                        </ul>
+                        <li>Hover OFF</li>
+                        <ul>
+                            <li>Cursor changes from Pointer to Default</li>
+                            <li>Star fill changes from RED to WHITE</li>
+                            <li>Star outline changes from RED to GREY</li>
+                        </ul>
+                        <li>Click Toggle ON</li>
+                        <ul>
+                            <li>Star fill stays RED</li>
+                            <li>Star outline stays RED</li>
+                        </ul>
+                    </ul>
+
+                    <h4>Star Icons - Left of Hovered Star:</h4>
+                    <ul>
+                        <li>Hover ON</li>
+                        <ul>
+                            <li>Star fill changes from WHITE to DARK GREY</li>
+                            <li>Star outline changes from GREY to DARK GREY</li>
+                        </ul>
+                        <li>Hover OFF</li>
+                        <ul>
+                            <li>Star fill changes from DARK GREY to WHITE</li>
+                            <li>Star outline changes from DARK GREY to GREY</li>
+                        </ul>
+                        <li>Click Toggle ON</li>
+                        <ul>
+                            <li>Star fill changes to/stays RED, ignoring Hover OFF</li>
+                            <li>Star outline changes to/stays RED, ignoring Hover OFF</li>
+                        </ul>
+                    </ul>
+                    <h4>Star Icons - Right of Hovered Star:</h4>
+                    <ul>
+                        <li>Hover ON</li>
+                        <ul>
+                            <li>Star fill changes to WHITE </li>
+                            <li>Star outline changes to GREY</li>
+                        </ul>
+                        <li>Hover OFF - No Star to Right Selected</li>
+                        <ul>
+                            <li>N/A</li>
+                        </ul>
+                        <li>Hover OFF - Any Star to Right Selected</li>
+                        <ul>
+                            <li>Star fill changes to RED</li>
+                            <li>Star outline changes to RED</li>
+                        </ul>                        
+                        <li>Click Toggle ON</li>
+                        <ul>
+                            <li>Star fill stays WHITE, ignoring Hover OFF</li>
+                            <li>Star outline stays GREY, ignoring Hover OFF</li>
+                        </ul>
+                    </ul>
+                </div>
+                
+            </div>
+
+            <div class="trfl-container">
+                <div class="pink-wrapper">
+                    <h3>Loops & Modes</h3>
+                </div>
+                <div class="text-wrapper">
+                    <h4>Star Icon - Loops</h4>
+                    <ul>
+                        <li>N/A</li>
+                    </ul>
+                    <h4>Star Icon - Modes</h4>
+                    <ul>
+                        <li>Once any Star Icon is clicked, the leftmost Star cannot be clicked off and will stay filled in RED, for a mininum 1 star rating</li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+
+    <div class="video-container">
+        <video controls>
+            <source src="assets/images/itch-stars.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+<script src="assets/script.js"></script>
+</body>
+</html>
