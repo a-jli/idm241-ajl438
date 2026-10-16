@@ -159,6 +159,6 @@ function leftRightUnHover(StarId) {
         star5Filled.style.display = 'block';
         star5.style.display = 'none';     
     } else {
-        console.log('lruh broke');
+        console.log('lruh broke?');
     }
 }
