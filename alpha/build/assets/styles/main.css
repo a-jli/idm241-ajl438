@@ -178,10 +178,10 @@ video {
 
 .stars-alpha {
     border: 2px solid var(--star-box);
-    padding: 7px 8px 7px 8px;
+    padding: 4px 8px 7px 8px;
     display: flex;
     flex-direction: row;
-    gap: 8px;
+    gap: 7px;
 }
 
 .star {

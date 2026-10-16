@@ -44,6 +44,7 @@ ratingStars.forEach(function (ratingStar) {
     star1Filled.style.display = 'block';
     star1.style.display = 'none';
     changeColor();
+    return starId;
     });
 });
 
@@ -58,7 +59,6 @@ ratingStars.forEach(function (ratingStar) {
 
 ratingStars.forEach(function (ratingStar) {
     ratingStar.addEventListener('mouseout', function (event) {
-    console.log('unhovered');
     leftRightUnHover(starId);
     changeColor();
     });
@@ -129,8 +129,7 @@ function leftRightHover(hoveredStarId) {
     }
 }
 
-function leftRightUnHover(StarId) {
-
+function leftRightUnHover(starId) {
     if (starId === 's2' || starId === 's2-f') {
         star1Filled.style.display = 'block';
         star1.style.display = 'none';
@@ -179,7 +178,27 @@ function leftRightUnHover(StarId) {
         star4.style.display = 'none'; 
         star5Filled.style.display = 'block';
         star5.style.display = 'none';     
+    } else if (starClicked === true) {
+        star1Filled.style.display = 'block';
+        star1.style.display = 'none';
+        star2Filled.style.display = 'none';
+        star2.style.display = 'block';   
+        star3Filled.style.display = 'none';
+        star3.style.display = 'block';
+        star4Filled.style.display = 'none';
+        star4.style.display = 'block'; 
+        star5Filled.style.display = 'none';
+        star5.style.display = 'block';
     } else {
-        console.log('lruh broke?');
+        star1Filled.style.display = 'none';
+        star1.style.display = 'block';
+        star2Filled.style.display = 'none';
+        star2.style.display = 'block';   
+        star3Filled.style.display = 'none';
+        star3.style.display = 'block';
+        star4Filled.style.display = 'none';
+        star4.style.display = 'block'; 
+        star5Filled.style.display = 'none';
+        star5.style.display = 'block';
     }
 }
