@@ -146,7 +146,7 @@ video {
 .video-container {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 70%;
     background-color: white;
     margin: 10px;
     border-radius: 0.25rem;
@@ -160,7 +160,7 @@ video {
         font-size: 1rem;
         font-style: italic;
         margin: 10px;
-        grid-column: span 2
+        grid-column: span 2;
     }
     img {
         width: 100%;
@@ -170,6 +170,10 @@ video {
     display: grid;
     grid: auto-flow / 1fr 1fr;   
     gap: 10px;
+}
+
+.fullwide {
+    grid-column: span 2;
 }
 
 
