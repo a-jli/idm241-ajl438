@@ -24,16 +24,10 @@
                 <h3>Triggers</h3>
             </div>
             <div class="text-wrapper">
-                <h4>Game Card</h4>
+                <h4>Game Card Thumbnail</h4>
                 <ul>
                     <li>Hover ON</li>
-                    <ul>
-                        <li>0.4s Delay</li>
-                    </ul>
                     <li>Hover OFF</li>
-                    <ul>
-                        <li>0.4s Delay</li>
-                    </ul>
                 </ul>
                 <h4>Add to Collection Button</h4>
                 <ul>
@@ -42,7 +36,7 @@
                     <li>Mouse DOWN</li>
                     <li>Mouse UP</li>
                 </ul>
-                <h4>Game Page Preview Popup</h4>
+                <h4>Game Page Preview</h4>
                 <ul>
                     <li>Hover ON</li>
                     <li>Hover OFF</li>
@@ -55,25 +49,29 @@
                 <h3>Rules</h3>
             </div>
             <div class="text-wrapper">
-                <h4>Game Card</h4>
+                <h4>Game Card Thumbnail</h4>
                 <ul>
                     <li>Hover ON</li>
                     <ul>
                         <li>Cursor changes from Default to Pointer</li>
+                        <li>Add to Collection button increases opacity from 0% to 100% over 0.2s</li>
+                        <li>Add to Collection button slides down 4px over 0.2s</li>
                         <li>0.4s Delay</li>
                         <ul>
-                            <li>Game Page Preview Popup increases opacity from 0% to 100% over 0.2s</li>
-                            <li>Game Page Preview Popup slides down to halfway down card image over 0.2s</li>
-                            <li>Game Page Preview Popup Images pull up from bottom over 0.2s</li>
+                            <li>Game Page Preview increases opacity from 0% to 100% over 0.2s</li>
+                            <li>Game Page Preview slides down to halfway down card image over 0.2s</li>
+                            <li>Game Page Preview Images pull up from bottom over 0.2s</li>
                         </ul>
                     </ul>
                     <li>Hover OFF</li>
                     <ul>
                         <li>Cursor changes from Pointer to Default</li>
+                        <li>Add to Collection button decreases opacity from 100% to 0% over 0.2s</li>
+                        <li>Add to Collection button slides up 4px over 0.2s</li>
                         <li>0.4s Delay</li>
                         <ul>
-                            <li>Game Page Preview Popup decreases opacity from 0% to 100% over 0.2s</li>
-                            <li>Game Page Preview Popup slides down from halfway down card image over 0.2s</li>
+                            <li>Game Page Preview decreases opacity from 0% to 100% over 0.2s</li>
+                            <li>Game Page Preview slides down from halfway down card image over 0.2s</li>
                         </ul>
                     </ul>
                 </ul>
@@ -100,7 +98,7 @@
                         <li>Button reverts to original size over 0.2s</li>
                     </ul>
                 </ul>
-                <h4>Game Page Preview Popup</h4>
+                <h4>Game Page Preview</h4>
                 <ul>
                     <li>Hover ON</li>
                     <ul>
@@ -120,7 +118,7 @@
                 <h3>Feedback</h3>
             </div>
             <div class="text-wrapper">
-                <h4>Game Card</h4>
+                <h4>Game Card Thumbnail</h4>
                 <ul>
                     <li>Hover ON</li>
                     <ul>
@@ -165,7 +163,7 @@
                         <li>Button reverts to original size over 0.2s</li>
                     </ul>
                 </ul>
-                <h4>Game Page Preview Popup</h4>
+                <h4>Game Page Preview</h4>
                 <ul>
                     <li>Hover ON</li>
                     <ul>
@@ -186,11 +184,11 @@
                 <h3>Loops & Modes</h3>
             </div>
             <div class="text-wrapper">
-                <h4>Game Card - Loops</h4>
+                <h4>Game Card Thumbnail- Loops</h4>
                 <ul>
                     <li>N/A</li>
                 </ul>
-                <h4>Game Card - Modes</h4>
+                <h4>Game Card Thumbnail - Modes</h4>
                 <ul>
                     <li>N/A</li>
                 </ul>
@@ -218,9 +216,11 @@
         <hr>
         <div class="image-wrapper">
             <img src="assets/images/card-default.png">
+            <img src="assets/images/itch-buttonfade-0.png">
+            <img src="assets/images/itch-buttonfade-1.png">
             <img src="assets/images/card-hover.png">
         </div>
-        <p>Card Image Default and Hover</p>
+        <p>Game Card Thumbnail Default and Hover, with Add to Collection button fade in</p>
         <hr>
         <div class="image-wrapper">
             <div>
@@ -234,7 +234,7 @@
                 <img src="assets/images/card-hover-popup-hoveroff-2.png">
         </div>
         </div>
-        <p>Game Page Preview Popup appearing on Card Image Hover On/Off</p>
+        <p>Game Page Preview fading in on Card Image Hover On/Off</p>
         <hr>
         <div class="image-wrapper">
             <img src="assets/images/card-hover.png">
@@ -247,7 +247,7 @@
         <div class="image-wrapper">
                <img src="assets/images/card-hover-popup-3.png">
                <img src="assets/images/card-hover-popup-hover.png">
-               <p>Game Page Preview Popup Default and Hover</p>   
+               <p>Game Page Preview Default and Hover</p>   
                   
         <hr>   
     </div>
