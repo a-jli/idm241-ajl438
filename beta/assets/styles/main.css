@@ -203,3 +203,18 @@ video {
         width: 80%;
     }
 }
+
+.test {
+    background-color: red;
+    transition: ease-out 200ms;
+    width: 100%;
+}
+
+.test:hover {
+    background-color: rgb(255, 89, 89);
+}
+
+.test:active {
+    background-color: rgb(178, 255, 89);
+    width: 90%;
+}
