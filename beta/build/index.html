@@ -14,8 +14,15 @@
         <h1>IDM 241: Beta Build</h1>
         <a href="https://itch.io/" target="_blank"><h2>Itch.io</h2></a>
         <h2>Interaction: Game Card</h2>
+
         <div class="game-card">
-            <img src="assets/images/card-image.png" alt="re:curse">
+            <img class="card-image" src="assets/images/card-image.png" alt="re:curse">
+            <button class="add-to-collection">
+                <svg version="1.1" stroke="currentColor" stroke-linecap="round" role="img" height="18" viewBox="0 0 24 24" 
+                class="svgicon icon_collection_add2" fill="none" stroke-width="2" stroke-linejoin="round" width="18" aria-hidden>
+                <path d="M 1,6 H 14" /><path d="M 1,11 H 14" /><path d="m 1,16 h 9" /><path d="M 18,11 V 21" /><path d="M 13,16 H 23"></path></svg>
+                <p>Add to Collection</p>
+            </button>
             <div class="card-text">
                 <p class="title">re:curse</p>
                 <p class="subtitle">decay together.</p>
@@ -47,38 +54,52 @@
                     <p>(152)</p>
                 </div>
                 <p class="genre">Role Playing</p>
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewBox="0 0 14 14">
+                <svg class="win8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewBox="0 0 14 14">
                 <path fill="#858585" d="M0.005 8l-0.005-4.876 6-0.815v5.691zM7 2.164l7.998-1.164v7h-7.998zM15 9l-0.002 7-7.998-1.125v-5.875zM6 14.747l-5.995-0.822-0-4.926h5.995z"></path>
                 </svg>
             </div>
-        </div>
-        
-        <button class="add-to-collection">
-            <svg version="1.1" stroke="currentColor" stroke-linecap="round" role="img" height="18" viewBox="0 0 24 24" 
-            class="svgicon icon_collection_add2" fill="none" stroke-width="2" stroke-linejoin="round" width="18" aria-hidden>
-            <path d="M 1,6 H 14" /><path d="M 1,11 H 14" /><path d="m 1,16 h 9" /><path d="M 18,11 V 21" /><path d="M 13,16 H 23"></path></svg>
-            Add to Collection
-        </button>
-
-        <div class="hover-modal">
-            <h4>re:curse</h4>
-            <p>
-                [say, linda...if you had a person trapped in a set of nested boxes...
-                to convince them the boxes are infinite... how many boxes do 
-                you
-            </p>
-            <img src="assets/images/modal-img1.gif">
-            <img src="assets/images/modal-img2.png">
+            <div class="hover-modal">
+                <h4>re:curse</h4>
+                <p class="say-linda">
+                    [say, linda...if you had a person trapped in a set of nested boxes...
+                    to convince them the boxes are infinite... how many boxes do 
+                    you
+                </p>
+                <img class="modal-img n1" src="assets/images/modal-img1.gif">
+                <img class="modal-img n2" src="assets/images/modal-img2.png">
             <button class="more-like-this">
-            <svg version="1.1" stroke="currentColor" stroke-linecap="round" role="img" height="18" viewBox="0 0 24 24" 
-            class="svgicon icon_collection_add2" fill="none" stroke-width="2" stroke-linejoin="round" width="18" aria-hidden>
-            <path d="M 1,6 H 14" /><path d="M 1,11 H 14" /><path d="m 1,16 h 9" /><path d="M 18,11 V 21" /><path d="M 13,16 H 23"></path></svg>
-                <p>More like this</p>
+                <svg version="1.1" width="18" stroke="currentColor" 
+                stroke-linecap="round" role="img" aria-hidden="" 
+                viewBox="0 0 24 24" fill="none" stroke-width="2" height="18" 
+                class="svgicon icon_map" stroke-linejoin="round"><polygon 
+                points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
+                <line x1="8" y1="2" x2="8" y2="18"></line><line x1="16" y1="6" x2="16" 
+                y2="22"></line></svg>
+                    <p>More like this</p>
+                </button>
+            </div>
+            <div class="tick-wrapper">
+                <svg class="popup_tick" height="18" viewBox="0 0 14 18" xmlns="http://www.w3.org/2000/svg" 
+                width="14"><path class="popup_tick_fill"  d="M2 0L11 9L2 18V0Z"></path>
+                <path class="popup_tick_outline" fill="white" d="M4 18L13 9L4 0H2L11 9.00006L2.00006 18H4Z"></path>
+            </svg>
+            </div>
+        </div>
+        <div class="lightbox"></div>
+        <div class="popup">
+            <h1>Add "re:cursed" to collection</h1>
+            <p class="exit-button">x</p>
+            <p>Add this game to a collection to save it for later.</p>
+            <hr>
+            <p>Add ot new titled</p>
+            <hr>
+            <p>Words about the game — Optional</p>
+            <button>
+                Add to collection
             </button>
+            <a href="">Manage collections</a>
         </div>
         <br>
-
-
     </header>
 
 
