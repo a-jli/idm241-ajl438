@@ -85,19 +85,46 @@
             </svg>
             </div>
         </div>
+        <div class="lightbox-0"></div>
+        <div class="lightbox-1"></div>
+        <div class="lightbox-2"></div>
+        <div class="lightbox-3"></div>
+        <div class="lightbox-4"></div>
         <div class="lightbox"></div>
         <div class="popup">
-            <h1>Add "re:cursed" to collection</h1>
-            <p class="exit-button">x</p>
-            <p>Add this game to a collection to save it for later.</p>
-            <hr>
-            <p>Add ot new titled</p>
-            <hr>
-            <p>Words about the game — Optional</p>
-            <button>
-                Add to collection
-            </button>
-            <a href="">Manage collections</a>
+            <div class="popup-width">
+                <div class="horizontal">
+                    <h2>Add "re:curse" to collection</h2>
+                    <p class="exit-button">x</p>
+                </div>
+                <hr>
+                <p>Add this game to a collection to save it for later.</p>
+                <hr>
+                <div class="collections">
+                    <div class="input_label_row">
+                        <input value="new" class="radio" name="add_to" type="radio">
+                        <span class="label"><strong>Add to new collection titled</strong></span>
+                    </div>
+                    <input name="collection[title]" 
+                    placeholder="Your Collection" type="text">
+                    <label class="privacy_toggle"><input name="collection[private]" type="checkbox">
+                        <span class="sub">Private collection — Only you can see the contents</span>
+                    </label>
+                </div>
+                <hr>
+                <div class="label">
+                    <strong>Words about the game</strong>
+                    <span class="sub"> — Optional</span>
+                </div>
+                                <img src="assets/images/input-placeholder.png">
+
+                <div class="horizontal">
+                    <button>   
+                        Add to collection
+                    </button>
+                    <h4>Manage collections<p>
+                </div>
+            </div>
         </div>
         <br>
     </header>
@@ -157,7 +184,7 @@
                         <li>0.4s Delay</li>
                         <ul>
                             <li>Game Page Preview decreases opacity from 0% to 100% over 0.2s</li>
-                            <li>Game Page Preview slides down from halfway down card image over 0.2s</li>
+                            <li>Game Page Preview slides up from halfway down card image over 0.2s</li>
                         </ul>
                     </ul>
                 </ul>
@@ -209,7 +236,7 @@
             <div class="pink-wrapper">
                 <h3>Feedback</h3>
             </div>
-                <div class="text-wrapper">
+<div class="text-wrapper">
                 <h4>Game Card Thumbnail</h4>
                 <ul>
                     <li>Hover ON</li>
@@ -232,7 +259,7 @@
                         <li>0.4s Delay</li>
                         <ul>
                             <li>Game Page Preview decreases opacity from 0% to 100% over 0.2s</li>
-                            <li>Game Page Preview slides down from halfway down card image over 0.2s</li>
+                            <li>Game Page Preview slides up from halfway down card image over 0.2s</li>
                         </ul>
                     </ul>
                 </ul>
