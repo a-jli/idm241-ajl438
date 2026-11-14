@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDM 241-001 Final Description</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/itch-icon.png">
+    <link rel="stylesheet" href="assets/styles/normalize.css">
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <style>
+        * {
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>IDM 241: Final Description</h1>
+        <a href="https://itch.io/" target="_blank"><h2>Itch.io</h2></a>
+        <h2>Interaction: Game Card</h2>
+        <img class="item-example" src="assets/images/recurse-card.png" loading="lazy" alt="itch.io game card">
+        <br>
+    </header>
+
+    <div class="container-wrapper">
+        <div class="trfl-container">
+            <div class="pink-wrapper">
+                <h3>Triggers</h3>
+            </div>
+            <div class="text-wrapper">
+                <h4>Game Card Thumbnail</h4>
+                <ul>
+                    <li>Hover ON</li>
+                    <li>Hover OFF</li>
+                </ul>
+                <h4>Add to Collection Button</h4>
+                <ul>
+                    <li>Hover ON</li>
+                    <li>Hover OFF</li>
+                    <li>Mouse DOWN</li>
+                    <li>Mouse UP</li>
+                </ul>
+                <h4>Game Page Preview</h4>
+                <ul>
+                    <li>Hover ON</li>
+                    <li>Hover OFF</li>
+                </ul>
+                <h4>More Like This Button</h4>
+                <ul>
+                    <li>Hover ON</li>
+                    <li>Hover OFF</li>
+                    <li>Mouse DOWN</li>
+                    <li>Mouse UP</li>
+                </ul>
+                <h4>Rating Stars</h4>
+                <ul>
+                    <li>Hover ON</li>
+                    <li>Hover OFF</li>
+                    <li>Click ON</li>
+                </ul>
+                <h4>Star Icon</h4>
+                <ul>
+                    <li>Hover ON</li>
+                    <li>Hover OFF</li>
+                    <li>Click ON</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="trfl-container">
+            <div class="pink-wrapper">
+                <h3>Rules</h3>
+            </div>
+                <div class="text-wrapper">
+                <h4>Game Card Thumbnail</h4>
+                <ul>
+                    <li>Hover ON</li>
+                    <ul>
+                        <li>Cursor changes from Default to Pointer</li>
+                        <li>Add to Collection button increases opacity from 0% to 100% over 0.2s</li>
+                        <li>Add to Collection button slides down 4px over 0.2s</li>
+                        <li>0.4s Delay</li>
+                        <ul>
+                            <li>Game Page Preview increases opacity from 0% to 100% over 0.2s</li>
+                            <li>Game Page Preview slides down to halfway down card image over 0.2s</li>
+                            <li>Game Page Preview Images pull up from bottom over 0.2s</li>
+                        </ul>
+                    </ul>
+                    <li>Hover OFF</li>
+                    <ul>
+                        <li>Cursor changes from Pointer to Default</li>
+                        <li>Add to Collection button decreases opacity from 100% to 0% over 0.2s</li>
+                        <li>Add to Collection button slides up 4px over 0.2s</li>
+                        <li>0.4s Delay</li>
+                        <ul>
+                            <li>Game Page Preview decreases opacity from 0% to 100% over 0.2s</li>
+                            <li>Game Page Preview slides up from halfway down card image over 0.2s</li>
+                        </ul>
+                    </ul>
+                </ul>
+                <h4>Add to Collection Button</h4>
+                <ul>
+                    <li>Hover ON</li>
+                    <ul>
+                        <li>Cursor changes from Default to Pointer</li>
+                        <li>Border changes from RED to PINK over 0.2s</li>
+                        <li>Fill changes from DARKER GREY to DARK GREY over 0.2s</li>
+                    </ul>
+                    <li>Hover OFF</li>
+                    <ul>
+                        <li>Cursor changes from Pointer to Default</li>
+                        <li>Border changes from PINK to RED over 0.2s</li>
+                        <li>Fill changes from DARK GREY to DARKER GREY over 0.2s</li>
+                    </ul>
+                    <li>Mouse DOWN</li>
+                    <ul>
+                        <li>Button slides down 2px over 0.2s</li>
+                    </ul>
+                    <li>Mouse UP</li>
+                    <ul>
+                        <li>Button slides UP 2px over 0.2s</li>
+                        <li>"Add to collection" modal opens</li>
+                        <ul>
+                            <li>GREY fill overlays window under modal over 0.12s</li>
+                            <li>Overlay increases opacity from 0% to 60% over 0.12s</li>
+                        </ul>
+                    </ul>
+                </ul>
+                <h4>Game Page Preview</h4>
+                <ul>
+                    <li>Hover ON</li>
+                    <ul>
+                        <li>Cursor changes from Default to Pointer</li>
+                        <li>Fill changes from DARK GREY to GREY over 0.2s</li>
+                    </ul>
+                    <li>Hover OFF</li>
+                    <ul>
+                        <li>Cursor changes from Pointer to Default</li>
+                        <li>Fill changes from GREY to DARK GREY over 0.2s</li>
+                    </ul>
+                </ul>
+                <h4>More Like This Button</h4>
+                <ul>
+                    <li>Hover ON</li>
+                    <ul>
+                        <li>Cursor changes from Default to Pointer</li>
+                        <li>Fill changes from GREY to LIGHTER GREY over 0.2s</li>
+                    </ul>
+                    <li>Hover OFF</li>
+                    <ul>
+                        <li>Cursor changes from Pointer to Default</li>
+                        <li>Fill changes from GREY to LIGHTER GREY over 0.2s</li>
+                    </ul>
+                    <li>Click ON</li>
+                    <ul>
+                        <li>Button slides down 2px over 0.2s</li>
+                    </ul>
+                    <li>Click OFF</li>
+                    <ul>
+                        <li>Button slides UP 2px over 0.2s</li>
+                    </ul>
+                </ul>
+                <h4>Rating Stars</h4>
+                <ul>
+                    <li>Hover ON</li>
+                    <ul>
+                        <li>Tooltip opacity increases from 0% to 100% over 0.2s</li>
+                    </ul>
+                    <li>Hover ON</li>
+                    <ul>
+                        <li><li>Tooltip opacity decreases from 0% to 100% over 0.2s</li></li>
+                    </ul>
+                    <li>Click ON</li>
+                        <ul>
+                        <li>GREY fill overlays window under modal over 0.12s</li>
+                        <li>Overlay increases opacity from 0% to 60% over 0.12s</li>
+                        <li>Rate & Review Modal overlays GREY fill</li>
+                    </ul>
+                </ul>
+                    <h4>Star Icons Default - Any Star Selected</h4>
+                    <ul>
+                        <li>Hover ON</li>
+                        <ul>
+                            <li>Cursor changes from Default to Pointer</li>
+                            <li>Star fill changes from WHITE to RED over 0.2s</li>
+                            <li>Star outline changes from GREY to RED over 0.2s</li>
+                        </ul>
+                        <li>Hover OFF</li>
+                        <ul>
+                            <li>Cursor changes from Pointer to Default</li>
+                            <li>Star fill changes from RED to WHITE over 0.2s</li>
+                            <li>Star outline changes from RED to GREY over 0.2s</li>
+                        </ul>
+                        <li>Click Toggle ON</li>
+                        <ul>
+                            <li>Star fill stays RED</li>
+                            <li>Star outline stays RED</li>
+                        </ul>
+                    </ul>
+
+                    <h4>Star Icons - Left of Hovered Star:</h4>
+                    <ul>
+                        <li>Hover ON</li>
+                        <ul>
+                            <li>Star fill changes from WHITE to DARK GREY over 0.2s</li>
+                            <li>Star outline changes from GREY to DARK GREY over 0.2s</li>
+                        </ul>
+                        <li>Hover OFF</li>
+                        <ul>
+                            <li>Star fill changes from DARK GREY to WHITE over 0.2s</li>
+                            <li>Star outline changes from DARK GREY to GREY over 0.2s</li>
+                        </ul>
+                        <li>Click Toggle ON</li>
+                        <ul>
+                            <li>Star fill changes to/stays RED, ignoring Hover OFF over 0.2s</li>
+                            <li>Star outline changes to/stays RED, ignoring Hover OFF over 0.2s</li>
+                        </ul>
+                    </ul>
+                    <h4>Star Icons - Right of Hovered Star:</h4>
+                    <ul>
+                        <li>Hover ON</li>
+                        <ul>
+                            <li>Star fill changes to WHITE over 0.2s</li>
+                            <li>Star outline changes to GREY over 0.2s</li>
+                        </ul>
+                        <li>Hover OFF - No Star to Right Selected</li>
+                        <ul>
+                            <li>N/A</li>
+                        </ul>
+                        <li>Hover OFF - Any Star to Right Selected</li>
+                        <ul>
+                            <li>Star fill changes to RED over 0.2s</li>
+                            <li>Star outline changes to RED over 0.2s</li>
+                        </ul>                        
+                        <li>Click Toggle ON</li>
+                        <ul>
+                            <li>Star fill stays WHITE, ignoring Hover OFF</li>
+                            <li>Star outline stays GREY, ignoring Hover OFF</li>
+                        </ul>
+                    </ul>
+            </div>
+        </div>
+        
+        <div class="trfl-container">
+            <div class="pink-wrapper">
+                <h3>Feedback</h3>
+            </div>
+                <div class="text-wrapper">
+            </div>
+        </div>
+
+        <div class="trfl-container">
+            <div class="pink-wrapper">
+                <h3>Loops & Modes</h3>
+            </div>
+            <div class="text-wrapper">
+                <!-- <h4>Game Card Thumbnail- Loops</h4>
+                <ul>
+                    <li>N/A</li>
+                </ul>
+                <h4>Game Card Thumbnail - Modes</h4>
+                <ul>
+                    <li>N/A</li>
+                </ul>
+                <h4>Add to Collection Button - Loops</h4>
+                <ul>
+                    <li>N/A</li>
+                </ul>
+                <h4>Add to Collection Button - Modes</h4>
+                <ul>
+                    <li>N/A</li>
+                </ul>
+                <h4>Game Page Preview Popup - Loops</h4>
+                <ul>
+                    <li>N/A</li>
+                </ul>
+                <h4>Game Page Preview Popup - Modes</h4>
+                <ul>
+                    <li>N/A</li>
+                </ul> -->
+                <h4>Star Icon - Loops</h4>
+                <ul>
+                    <li>N/A</li>
+                </ul>
+                <h4>Star Icon - Modes</h4>
+                <ul>
+                    <li>Once any Star Icon is clicked, the leftmost Star cannot 
+                        be clicked off and will stay filled in RED, for a mininum 
+                        1 star rating</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="video-container">
+        <div class="image-wrapper">
+            <img class="fullwide" src="assets/images/card-default.png" loading="lazy">
+            <img src="assets/images/card-hover-collection1.png" loading="lazy">
+            <img src="assets/images/card-hover-collection2.png" loading="lazy">
+        </div>
+        <p>Game Card Thumbnail Default and Hover, Add to Collection button fade in.</p>
+        <hr>
+        <div class="image-wrapper">
+            <img src="assets/images/card-hover-collection-hover.png" loading="lazy">
+            <img src="assets/images/card-hover-collection-click.png" loading="lazy">
+            <img class="fullwide" src="assets/images/add-to-collection-modal.png" loading="lazy">
+        </div>
+        <p>Add to Collection button hover, click, with overlay and modal</p>
+        <hr>
+        <div class="image-wrapper">
+            <div>
+                <img src="assets/images/card-hover-modal-hoverin-0.png" loading="lazy">
+                <img src="assets/images/card-hover-modal-1.png" loading="lazy">
+                <img src="assets/images/card-hover-modal-2.png" loading="lazy">
+                <img src="assets/images/card-hover-modal-3.png" loading="lazy">    
+            </div>
+            <div>
+                <img src="assets/images/card-hover-modal-4.png.png" loading="lazy">
+                <img src="assets/images/card-hover-modal-5.png" loading="lazy">
+                <img src="assets/images/card-hover-modal-6.png" loading="lazy">
+                <img src="assets/images/card-hover-modal-8.png" loading="lazy">          
+            </div>
+        </div>
+        <p>Game Page Preview fading in on Card Image Hover On/Off</p>
+        <hr>
+        <div class="image-wrapper">
+            <img src="assets/images/card-hover-modal-default.png" loading="lazy">
+            <img src="assets/images/card-hover-modal-hover.png" loading="lazy">
+            <img src="assets/images/card-hover-modal-click0.png" loading="lazy">
+            <img src="assets/images/card-hover-modal-click.png" loading="lazy">
+        </div>
+        <p>Game Page Preview Default, Hover, and More Like This button Hover and Click</p>
+        <hr>
+        <div class="image-wrapper">
+        <img src="assets/images/card-stars-default.png" loading="lazy">
+        <img src="assets/images/card-stars-hover-1.png" loading="lazy">
+        <img src="assets/images/card-stars-hover-2.png" loading="lazy">
+        <img src="assets/images/card-stars-click.png" loading="lazy">
+        </div>
+        <p>Rating Stars Default, Hover, and Click with overlay and modal</p>
+        <hr>
+    <video controls>
+        <source src="assets/images/rating-modal-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <video controls>
+        <source src="assets/images/itch-stars.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+        <p>Stars Icons interactions in modal & closeup</p>
+    </div>
+<script src="assets/script.js"></script>
+</body>
+</html>
+
+        <!-- <img src="assets/images/" loading="lazy">
+        <img src="assets/images/" loading="lazy">
+        <img src="assets/images/" loading="lazy">
+        <img src="assets/images/" loading="lazy">
+        <img src="assets/images/" loading="lazy">
+        <img src="assets/images/" loading="lazy"> -->
