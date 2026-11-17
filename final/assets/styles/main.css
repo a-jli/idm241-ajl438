@@ -27,7 +27,7 @@ br {
 hr {
     width: 100%;
     border: 1px solid #cdcdcd;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     grid-column: span 2
 }
 
@@ -173,12 +173,18 @@ video {
     display: grid;
     grid: auto-flow / 1fr 1fr;   
     gap: 10px;
+    img:hover {
+        cursor: default;
+    }
 }
 
 .fullwide {
     grid-column: span 2;
 }
 
+.rightline {
+    border: solid 2px var(--darker-grey);
+}
 
 
 @media screen and (max-width: 1280px) {
@@ -192,6 +198,14 @@ video {
 
     .video-container {
         width: 80%;
+    }
+
+    .image-wrapper {
+        display: flex;
+        flex-direction: column;
+        p {
+            font-size: 0.8rem;
+        }
     }
 }
 
