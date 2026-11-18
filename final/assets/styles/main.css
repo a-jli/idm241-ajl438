@@ -178,6 +178,10 @@ video {
     }
 }
 
+.three {
+     grid: auto-flow / 1fr 1fr 1fr;  
+}
+
 .fullwide {
     grid-column: span 2;
 }
